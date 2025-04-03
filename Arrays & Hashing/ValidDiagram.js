@@ -14,6 +14,8 @@
  *
  * Thought: This program can be done by iterating through each character of each string and record their frequency in HashMap
  * then we could compare two HashMap.
+ *
+ * Time Complexity: O(N)
  */
 
 let s = "racecar";
