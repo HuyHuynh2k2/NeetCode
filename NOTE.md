@@ -1,24 +1,47 @@
-# Data stucture
+# Data Structures
 
-<h1>This file is used for noting technical things that I want to remember during of problems.</h1>
+> This file is used for noting technical things that I want to remember during problems.
 
-<u>Data Structures - Map:</u>
+## <u>Data Structures – Map</u>
 
-1. HashMap: It stores the key-value pair and it can be accessed in O(1) time complexity.
+### Common Java Map Implementations
 
-2. TreeMap: It also stores the key-value pair but it keeps them sorted based on keys.
+1. **HashMap**
 
-3. LinkedHashMap: It maintains insertion order, which means that when you iterate over a linked hash map, the elements will be returned in the same order as they were inserted into the map.
+   - Stores key-value pairs.
+   - Allows constant time `O(1)` access.
+   - Not synchronized.
 
-4. HashTable: It is synchronized version of HashMap class.
+2. **TreeMap**
 
-In java, we have two types of maps:
+   - Stores key-value pairs **sorted by keys**.
+   - Implements `SortedMap` interface.
+   - Slower than `HashMap` due to sorting.
 
-- SortedMap (TreeMap)
-- UnsortedMap (HashMap)
+3. **LinkedHashMap**
 
-We mostly use HashMap to take advange of its constant time complexity and idea of
-key-value pairs.
+   - Maintains **insertion order**.
+   - Useful when predictable iteration order is needed.
 
-- Create a map:
-  Map<Integer, Integer> map = new HashMap<>();
+4. **Hashtable**
+   - Synchronized version of `HashMap`.
+   - Legacy class; generally replaced by `ConcurrentHashMap` if thread-safety is needed.
+
+---
+
+### Map Categories in Java
+
+- **SortedMap**
+  - Example: `TreeMap`
+- **UnsortedMap**
+  - Example: `HashMap`
+
+We mostly use **HashMap** to take advantage of its **constant time complexity** and the concept of **key-value pairs**.
+
+---
+
+### Example: Creating a Map in Java
+
+```java
+Map<Integer, Integer> map = new HashMap<>();
+```
