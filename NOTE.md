@@ -1,8 +1,8 @@
 # Data stucture
 
-- This file is used for noting technical things that I want to remember during of problems.
+<h1>This file is used for noting technical things that I want to remember during of problems.</h1>
 
-<u>Data Structures - Map:<\u>
+<u>Data Structures - Map:</u>
 
 1. HashMap: It stores the key-value pair and it can be accessed in O(1) time complexity.
 2. TreeMap: It also stores the key-value pair but it keeps them sorted based on keys.
