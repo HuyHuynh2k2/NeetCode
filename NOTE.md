@@ -132,10 +132,9 @@ public class Student implements Comparable<Student> {
         return this.score - other.score; // ascending order by score
     }
 }
-
 ```
 
-````java
+```java
 s.substring(startIndex, endIndex); // return substring from startIndex to endIndex-1
 s.subSequence(startIndex, endIndex); // return subsequence from startIndex to endIndex-1
 ```
@@ -162,12 +161,12 @@ s.startsWith(prefix); // check if string starts with prefix
 s.endsWith(suffix); // check if string ends with suffix
 ```
 
-```java
+````java
 s.split(regex); // split string into array of strings using regex
 
 ```java
 Arrays.toString(arrayOfStrings) // convert arrayOfStrings to string like "[a,b,c]"
-````
+```
 
 ---
 
@@ -187,3 +186,4 @@ System.arraycopy(sourceArr, sourceStart, destArr, destStart, numElementsToCopy);
 ```
 
 ```
+````
