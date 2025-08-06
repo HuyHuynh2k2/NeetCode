@@ -27,8 +27,6 @@
    - Synchronized version of `HashMap`.
    - Legacy class; generally replaced by `ConcurrentHashMap` if thread-safety is needed.
 
----
-
 ### Map Categories in Java
 
 - **SortedMap**
@@ -38,10 +36,23 @@
 
 We mostly use **HashMap** to take advantage of its **constant time complexity** and the concept of **key-value pairs**.
 
----
-
-### Example: Creating a Map in Java
+### Creating a Map in Java
 
 ```java
 Map<Integer, Integer> map = new HashMap<>();
+```
+
+### Adding Elements to a Map
+
+```
+map.put(key, value);
+```
+
+### Iterating a Map
+
+```
+for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    int key = entry.getKey();
+    int value = entry.getValue();
+}
 ```
