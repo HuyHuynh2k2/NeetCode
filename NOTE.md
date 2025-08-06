@@ -87,18 +87,87 @@ String is immutable in java so you cannot change any character inside string but
 
 ```java
 String s = "abc";
-s.charAt(index); // get char at index
-s.length(); // length of string
-s.substring(startIndex, endIndex); // substring from startIndex to endIndex-1
+```
+
+```java
+s.charAt(index);
+s.charAt(0); // return a
+```
+
+```java
+s.toCharArray(); // return [`a`, `b`, `c`]
+```
+
+```java
+s.length(); // return 3
+```
+
+```java
+s.toLowerCase(); // return lowercase of string
+s.toUpperCase(); // return uppercase of string
+```
+
+```java
+s.trim(); // remove leading and trailing WHITESPACE
+```
+
+```java
+s.equals(otherString); // compare two strings
+s.equals("abc"); // true
+
+s.equalsIgnoreCase(otherString);
+s.equalsIgnoreCase("ABC"); // true
+
+s.compareTo(otherString); // mostly used to write to compare two same type objects
+
+public class Student implements Comparable<Student> {
+    int score;
+
+    public Student(int score) {
+        this.score = score;
+    }
+
+    @Override
+    public int compareTo(Student other) {
+        return this.score - other.score; // ascending order by score
+    }
+}
+
+```
+
+````java
+s.substring(startIndex, endIndex); // return substring from startIndex to endIndex-1
+s.subSequence(startIndex, endIndex); // return subsequence from startIndex to endIndex-1
+```
+
+```java
 s.replace(oldChar, newChar); // replace all oldChar with newChar
+s.replaceAll(regex, replacement); // replace all matches of regex with replacement
+s.replaceFirst(regex, replacement); // replace first match of regex with replacement
+```
+
+```java
 s.indexOf(charOrSubstring); // return first occurence of char or substring else -1;
+s.indexOf(charOrSubstring, fromIndex); // return first occurence of char or substring starting from fromIndex else -1;
 s.lastIndexOf(charOrSubstring); // return last occurence of char or substring else -1;
+
+```
+
+```java
 s.contains(substring); // check if substring exists in string
+```
+
+```java
 s.startsWith(prefix); // check if string starts with prefix
 s.endsWith(suffix); // check if string ends with suffix
-s.split(regex); // split string into array of strings using regex
-Arrays.toString(arrayOfStrings) // convert arrayOfStrings to string like "[a,b,c]"
 ```
+
+```java
+s.split(regex); // split string into array of strings using regex
+
+```java
+Arrays.toString(arrayOfStrings) // convert arrayOfStrings to string like "[a,b,c]"
+````
 
 ---
 
@@ -113,4 +182,8 @@ Arrays.sort(arr); // sort array in ascending order
 Arrays.binarySearch(arr, target); // search for target in sorted array and return index else -1;
 Arrays.copyOfRange(arr, start, end); // copy elements from start to end-1 into new array
 System.arraycopy(sourceArr, sourceStart, destArr, destStart, numElementsToCopy); // copy elements from sourceArr[start] to sourceArr[end-1] into destArr[start]
+```
+
+```
+
 ```
