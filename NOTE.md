@@ -85,6 +85,8 @@ for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 
 String is immutable in java so you cannot change any character inside string but you can create another string with changed characters.
 
+# Declare string
+
 ```java
 String s = "abc";
 ```
@@ -94,31 +96,42 @@ s.charAt(index);
 s.charAt(0); // return a
 ```
 
+# Convert string to char array
+
 ```java
 s.toCharArray(); // return [`a`, `b`, `c`]
 ```
+
+# Get length of string
 
 ```java
 s.length(); // return 3
 ```
 
-```java
-s.toLowerCase(); // return lowercase of string
-s.toUpperCase(); // return uppercase of string
-```
+# lowercase/uppercase of string
 
 ```java
-s.trim(); // remove leading and trailing WHITESPACE
+s.toLowerCase();
+s.toUpperCase();
 ```
 
+# remove leading and trailing whitespace
+
 ```java
-s.equals(otherString); // compare two strings
-s.equals("abc"); // true
+s.trim();
+```
+
+# Compare Strings
+
+```java
+s.equals(otherString);
+s.equals("abc");
 
 s.equalsIgnoreCase(otherString);
-s.equalsIgnoreCase("ABC"); // true
+s.equalsIgnoreCase("ABC");
 
-s.compareTo(otherString); // mostly used to write to compare two same type objects
+// mostly used to write to compare two same type objects
+s.compareTo(otherString);
 
 public class Student implements Comparable<Student> {
     int score;
@@ -134,39 +147,53 @@ public class Student implements Comparable<Student> {
 }
 ```
 
+# Splitting a String
+
 ```java
-s.substring(startIndex, endIndex); // return substring from startIndex to endIndex-1
-s.subSequence(startIndex, endIndex); // return subsequence from startIndex to endIndex-1
+s.substring(startIndex, endIndex);
+s.subSequence(startIndex, endIndex);
 ```
 
+# Replacement
+
 ```java
-s.replace(oldChar, newChar); // replace all oldChar with newChar
-s.replaceAll(regex, replacement); // replace all matches of regex with replacement
-s.replaceFirst(regex, replacement); // replace first match of regex with replacement
+s.replace(oldChar, newChar);
+s.replaceAll(regex, replacement);
+s.replaceFirst(regex, replacement);
 ```
 
+# Specific Character Search
+
 ```java
-s.indexOf(charOrSubstring); // return first occurence of char or substring else -1;
-s.indexOf(charOrSubstring, fromIndex); // return first occurence of char or substring starting from fromIndex else -1;
-s.lastIndexOf(charOrSubstring); // return last occurence of char or substring else -1;
+s.indexOf(charOrSubstring);
+s.indexOf(charOrSubstring, fromIndex);
+s.lastIndexOf(charOrSubstring);
 
 ```
 
-```java
-s.contains(substring); // check if substring exists in string
-```
+# check if substring exists in string
 
 ```java
-s.startsWith(prefix); // check if string starts with prefix
-s.endsWith(suffix); // check if string ends with suffix
+s.contains(substring);
 ```
 
-```java
-s.split(regex); // split string into array of strings using regex
-```
+# Check Prefix/Suffix
 
 ```java
-Arrays.toString(arrayOfStrings) // convert arrayOfStrings to string like "[a,b,c]"
+s.startsWith(prefix);
+s.endsWith(suffix);
+```
+
+# Joining Strings
+
+```java
+s.split(regex);
+```
+
+# Converting Arrays to Strings
+
+```java
+Arrays.toString(arrayOfStrings)
 ```
 
 ---
