@@ -43,9 +43,8 @@ We mostly use **HashMap** to take advantage of its **constant time complexity** 
 Map<Integer, Integer> map = new HashMap<>();
 ```
 
-// in javascript
-
 ```javascript
+// in javascript
 const map = new Map();
 ```
 
@@ -80,7 +79,9 @@ for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 }
 ```
 
-## <u> String </u>
+---
+
+## <u> Data Strcuture - String </u>
 
 String is immutable in java so you cannot change any character inside string but you can create another string with changed characters.
 
@@ -99,7 +100,9 @@ s.split(regex); // split string into array of strings using regex
 Arrays.toString(arrayOfStrings) // convert arrayOfStrings to string like "[a,b,c]"
 ```
 
-## <u> Array </u>
+---
+
+## <u> Data Structure - Array </u>
 
 Array is mutable in java so you can change any element inside array.
 
