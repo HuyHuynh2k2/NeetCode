@@ -178,16 +178,20 @@ Array is mutable in java so you can change any element inside array.
 ```java
 int[] arr = {1,2,3};
 arr[index] = newValue; // change value at index
+```
+
+```java
 Arrays.sort(arr); // sort array in ascending order
+```
+
+```java
 Arrays.binarySearch(arr, target); // search for target in sorted array and return index else -1;
+```
+
+```java
 Arrays.copyOfRange(arr, start, end); // copy elements from start to end-1 into new array
+```
+
+```java
 System.arraycopy(sourceArr, sourceStart, destArr, destStart, numElementsToCopy); // copy elements from sourceArr[start] to sourceArr[end-1] into destArr[start]
-```
-
-```
-
-```
-
-```
-
 ```
