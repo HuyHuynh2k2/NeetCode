@@ -161,8 +161,9 @@ s.startsWith(prefix); // check if string starts with prefix
 s.endsWith(suffix); // check if string ends with suffix
 ```
 
-````java
+```java
 s.split(regex); // split string into array of strings using regex
+```
 
 ```java
 Arrays.toString(arrayOfStrings) // convert arrayOfStrings to string like "[a,b,c]"
@@ -186,4 +187,7 @@ System.arraycopy(sourceArr, sourceStart, destArr, destStart, numElementsToCopy);
 ```
 
 ```
-````
+
+```
+
+```
