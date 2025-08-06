@@ -27,7 +27,7 @@
    - Synchronized version of `HashMap`.
    - Legacy class; generally replaced by `ConcurrentHashMap` if thread-safety is needed.
 
-### Map Categories in Java
+#### Map Categories in Java
 
 - **SortedMap**
   - Example: `TreeMap`
@@ -36,7 +36,7 @@
 
 We mostly use **HashMap** to take advantage of its **constant time complexity** and the concept of **key-value pairs**.
 
-### Creating a Map in Java
+#### Creating a Map in Java
 
 ```java
 // in java
@@ -48,7 +48,7 @@ Map<Integer, Integer> map = new HashMap<>();
 const map = new Map();
 ```
 
-### Adding Elements to a Map
+#### Adding Elements to a Map
 
 ```java
 // In java
@@ -60,7 +60,7 @@ map.put(key, value);
 map.set(key, value);
 ```
 
-### Getting an key and value from a map
+#### Getting an key and value from a map
 
 ```java
 // This will return the value of the key, if there is no such key it returns null
@@ -70,7 +70,7 @@ int key = map.get(key);
 int value = map.getOrDefault(key, defaultValue);
 ```
 
-### Iterating a Map
+#### Iterating a Map
 
 ```java
 for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
@@ -85,7 +85,7 @@ for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 
 String is immutable in java so you cannot change any character inside string but you can create another string with changed characters.
 
-# Declare string
+#### Declare string
 
 ```java
 String s = "abc";
@@ -96,32 +96,32 @@ s.charAt(index);
 s.charAt(0); // return a
 ```
 
-# Convert string to char array
+#### Convert string to char array
 
 ```java
 s.toCharArray(); // return [`a`, `b`, `c`]
 ```
 
-# Get length of string
+#### Get length of string
 
 ```java
 s.length(); // return 3
 ```
 
-# lowercase/uppercase of string
+#### lowercase/uppercase of string
 
 ```java
 s.toLowerCase();
 s.toUpperCase();
 ```
 
-# remove leading and trailing whitespace
+#### remove leading and trailing whitespace
 
 ```java
 s.trim();
 ```
 
-# Compare Strings
+#### Compare Strings
 
 ```java
 s.equals(otherString);
@@ -147,14 +147,14 @@ public class Student implements Comparable<Student> {
 }
 ```
 
-# Splitting a String
+#### Splitting a String
 
 ```java
 s.substring(startIndex, endIndex);
 s.subSequence(startIndex, endIndex);
 ```
 
-# Replacement
+#### Replacement
 
 ```java
 s.replace(oldChar, newChar);
@@ -162,7 +162,7 @@ s.replaceAll(regex, replacement);
 s.replaceFirst(regex, replacement);
 ```
 
-# Specific Character Search
+#### Specific Character Search
 
 ```java
 s.indexOf(charOrSubstring);
@@ -177,20 +177,20 @@ s.lastIndexOf(charOrSubstring);
 s.contains(substring);
 ```
 
-# Check Prefix/Suffix
+#### Check Prefix/Suffix
 
 ```java
 s.startsWith(prefix);
 s.endsWith(suffix);
 ```
 
-# Joining Strings
+#### Joining Strings
 
 ```java
 s.split(regex);
 ```
 
-# Converting Arrays to Strings
+#### Converting Arrays to Strings
 
 ```java
 Arrays.toString(arrayOfStrings)
@@ -202,22 +202,31 @@ Arrays.toString(arrayOfStrings)
 
 Array is mutable in java so you can change any element inside array.
 
+#### Declare array
+
 ```java
 int[] arr = {1,2,3};
-arr[index] = newValue; // change value at index
+arr[index] = newValue;
 ```
 
-```java
-Arrays.sort(arr); // sort array in ascending order
-```
+#### Build in sort function
+
+````java
+Arrays.sort(arr);
+
+#### Build in binary search function
 
 ```java
-Arrays.binarySearch(arr, target); // search for target in sorted array and return index else -1;
-```
+Arrays.binarySearch(arr, target);
+````
+
+#### Build in copy function
 
 ```java
-Arrays.copyOfRange(arr, start, end); // copy elements from start to end-1 into new array
+Arrays.copyOfRange(arr, start, end);
 ```
+
+#### Copy array using System.arraycopy() method
 
 ```java
 System.arraycopy(sourceArr, sourceStart, destArr, destStart, numElementsToCopy); // copy elements from sourceArr[start] to sourceArr[end-1] into destArr[start]
